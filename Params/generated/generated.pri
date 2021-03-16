@@ -1,0 +1,11 @@
+HEADERS		+= ../User/inc/WildType.hpp
+HEADERS		+= ../User/inc/WildTypeStrain.hpp
+HEADERS		+= ../User/inc/SubstanceNames.hpp
+SOURCES		+= ../User/src/WildType.cpp
+SOURCES		+= ../User/src/WildTypeStrain.cpp
+HEADERS		+= ../User/inc/deltaRhlI.hpp
+HEADERS		+= ../User/inc/deltaRhlIStrain.hpp
+HEADERS		+= ../User/inc/SubstanceNames.hpp
+SOURCES		+= ../User/src/deltaRhlI.cpp
+SOURCES		+= ../User/src/deltaRhlIStrain.cpp
+SOURCES		+= ../User/src/Strains.cpp

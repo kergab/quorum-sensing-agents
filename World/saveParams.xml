@@ -1,0 +1,171 @@
+<!DOCTYPE params>
+<world>
+ <size height="480" width="640"/>
+ <substances>
+  <substance name="food">
+   <domain filled="1">
+    <rectangle bottom="479" right="639" left="0" top="0"/>
+    <attribute coefficient="0.5" flag="0" value="0.5"/>
+   </domain>
+  </substance>
+  <substance name="rhli_sign">
+   <domain filled="1">
+    <rectangle bottom="479" right="639" left="0" top="0"/>
+    <attribute coefficient="0.2" flag="0" value="0"/>
+   </domain>
+  </substance>
+  <substance name="lasi_sign">
+   <domain filled="1">
+    <rectangle bottom="479" right="639" left="0" top="0"/>
+    <attribute coefficient="0.2" flag="0" value="0"/>
+   </domain>
+  </substance>
+  <substance name="haas">
+   <domain filled="1">
+    <rectangle bottom="479" right="639" left="0" top="0"/>
+    <attribute coefficient="0.1" flag="0" value="0"/>
+   </domain>
+  </substance>
+  <substance name="mono_rls">
+   <domain filled="1">
+    <rectangle bottom="479" right="639" left="0" top="0"/>
+    <attribute coefficient="0.2" flag="0" value="0"/>
+   </domain>
+  </substance>
+  <substance name="di_rls">
+   <domain filled="1">
+    <rectangle bottom="479" right="639" left="0" top="0"/>
+    <attribute coefficient="0.3" flag="0" value="0"/>
+   </domain>
+  </substance>
+ </substances>
+ <strains>
+  <strain name="WildType">
+   <division mass="5"/>
+   <state_signals>
+    <signal name="rhli_state"/>
+    <signal name="lasi_state"/>
+    <signal name="sadc_signal"/>
+   </state_signals>
+   <param value="1.0" type="double" name="rhli_sign_treshold"/>
+   <param value="1.0" type="double" name="lasi_sign_treshold"/>
+   <param value="1.0" type="double" name="haa_treshold"/>
+   <param value="1.0" type="double" name="rhla_max_effect"/>
+   <param value="1.0" type="double" name="rhlb_max_effect"/>
+   <param value="1.0" type="double" name="rhlc_max_effect"/>
+   <param value="1.0" type="double" name="v_fraction"/>
+   <state id="q0">
+    <param value="1.0" type="double" name="bite_0"/>
+    <param value="1.0" type="double" name="loss_0"/>
+    <param value="1.0" type="double" name="rhli_sign_base"/>
+    <param value="1.0" type="double" name="lasi_sign_base"/>
+    <param value="0.0" type="double" name="rhla_base"/>
+    <param value="0.0" type="double" name="rhlb_base"/>
+    <param value="0.0" type="double" name="rhlc_base"/>
+    <param value="1.0" type="double" name="v_max_0"/>
+   </state>
+   <state id="q1">
+    <param value="1.0" type="double" name="bite_1"/>
+    <param value="1.0" type="double" name="loss_1"/>
+    <param value="1.0" type="double" name="rhli_sign_max"/>
+    <param value="1.0" type="double" name="lasi_sign_max"/>
+   </state>
+   <state id="q2">
+    <param value="1.0" type="double" name="bite_2"/>
+    <param value="1.0" type="double" name="loss_2"/>
+    <param value="1.0" type="double" name="rhli_sign_inter"/>
+    <param value="1.0" type="double" name="rhla_min"/>
+    <param value="1.0" type="double" name="rhlb_min"/>
+    <param value="1.0" type="double" name="rhlc_min"/>
+    <param value="1.0" type="double" name="lasi_sign_inter"/>
+    <param value="1.0" type="double" name="v_max_1"/>
+   </state>
+   <state id="q3">
+    <param value="1.0" type="double" name="bite_3"/>
+    <param value="1.0" type="double" name="loss_3"/>
+    <param value="1.0" type="double" name="rhla_max"/>
+    <param value="1.0" type="double" name="rhlb_max"/>
+    <param value="1.0" type="double" name="rhlc_max"/>
+    <param value="1.0" type="double" name="v_max_2"/>
+   </state>
+   <state id="sadc1">
+    <param value="1.0" type="double" name="bite_4"/>
+    <param value="1.0" type="double" name="loss_4"/>
+    <param value="1.0" type="double" name="v_max_0_1"/>
+   </state>
+   <state id="sadc2">
+    <param value="1.0" type="double" name="bite_5"/>
+    <param value="1.0" type="double" name="loss_5"/>
+    <param value="1.0" type="double" name="v_max_12_1"/>
+   </state>
+   <culture count="100" id="0">
+    <rectangle bottom="179" right="139" left="100" top="100"/>
+   </culture>
+   <culture count="10" id="1">
+    <rectangle bottom="159" right="129" left="80" top="90"/>
+   </culture>
+  </strain>
+  <strain name="deltaRhlI">
+   <division mass="5"/>
+   <state_signals>
+    <signal name="rhli_sign"/>
+    <signal name="lasi_sign"/>
+    <signal name="sadc_signal"/>
+   </state_signals>
+   <param value="1.0" type="double" name="rhli_sign_treshold"/>
+   <param value="1.0" type="double" name="lasi_sign_treshold"/>
+   <param value="1.0" type="double" name="haa_treshold"/>
+   <param value="1.0" type="double" name="rhla_max_effect"/>
+   <param value="1.0" type="double" name="rhlb_max_effect"/>
+   <param value="1.0" type="double" name="rhlc_max_effect"/>
+   <param value="1.0" type="double" name="v_fraction"/>
+   <state id="q0">
+    <param value="1.0" type="double" name="bite_0"/>
+    <param value="1.0" type="double" name="loss_0"/>
+    <param value="1.0" type="double" name="lasi_sign_base"/>
+    <param value="0.0" type="double" name="rhla_base"/>
+    <param value="0.0" type="double" name="rhlb_base"/>
+    <param value="0.0" type="double" name="rhlc_base"/>
+    <param value="1.0" type="double" name="v_max_0"/>
+   </state>
+   <state id="q1">
+    <param value="1.0" type="double" name="bite_1"/>
+    <param value="1.0" type="double" name="loss_1"/>
+    <param value="1.0" type="double" name="lasi_sign_max"/>
+   </state>
+   <state id="q2">
+    <param value="1.0" type="double" name="bite_2"/>
+    <param value="1.0" type="double" name="loss_2"/>
+    <param value="1.0" type="double" name="lasi_sign_inter"/>
+    <param value="1.0" type="double" name="rhla_min"/>
+    <param value="1.0" type="double" name="rhlb_min"/>
+    <param value="1.0" type="double" name="rhlc_min"/>
+    <param value="1.0" type="double" name="v_max_1"/>
+   </state>
+   <state id="q3">
+    <param value="1.0" type="double" name="bite_3"/>
+    <param value="1.0" type="double" name="loss_3"/>
+    <param value="1.0" type="double" name="rhla_max"/>
+    <param value="1.0" type="double" name="rhlb_max"/>
+    <param value="1.0" type="double" name="rhlc_max"/>
+    <param value="1.0" type="double" name="v_max_2"/>
+   </state>
+   <state id="sadc1">
+    <param value="1.0" type="double" name="bite_4"/>
+    <param value="1.0" type="double" name="loss_4"/>
+    <param value="1.0" type="double" name="v_max_0_1"/>
+   </state>
+   <state id="sadc2">
+    <param value="1.0" type="double" name="bite_5"/>
+    <param value="1.0" type="double" name="loss_5"/>
+    <param value="1.0" type="double" name="v_max_12_1"/>
+   </state>
+   <culture count="100" id="0">
+    <rectangle bottom="179" right="139" left="100" top="100"/>
+   </culture>
+   <culture count="10" id="1">
+    <rectangle bottom="159" right="129" left="80" top="90"/>
+   </culture>
+  </strain>
+ </strains>
+</world>

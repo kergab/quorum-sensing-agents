@@ -1,0 +1,21 @@
+HEADERS		+= ../Params/inc/Attribute.hpp
+HEADERS		+= ../Params/inc/Circle.hpp
+HEADERS		+= ../Params/inc/Culture.hpp
+HEADERS		+= ../Params/inc/Domain.hpp
+HEADERS		+= ../Params/inc/Param.hpp
+HEADERS		+= ../Params/inc/Params.hpp
+HEADERS		+= ../Params/inc/Rect.hpp
+HEADERS		+= ../Params/inc/Size.hpp
+HEADERS		+= ../Params/inc/StrainDescriptor.hpp
+HEADERS		+= ../Params/inc/SubstanceDescriptor.hpp
+
+SOURCES		+= ../Params/src/Attribute.cpp
+SOURCES		+= ../Params/src/Circle.cpp
+SOURCES		+= ../Params/src/Culture.cpp
+SOURCES		+= ../Params/src/Domain.cpp
+SOURCES		+= ../Params/src/Param.cpp
+SOURCES		+= ../Params/src/Params.cpp
+SOURCES		+= ../Params/src/Rect.cpp
+SOURCES		+= ../Params/src/Size.cpp
+SOURCES		+= ../Params/src/StrainDescriptor.cpp
+SOURCES		+= ../Params/src/SubstanceDescriptor.cpp
