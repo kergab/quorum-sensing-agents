@@ -1,8 +1,0 @@
-What's this?
-
-
-This is the modellinng program I wrote for my bachelor thesis.
-
-The purpose of the software is to model systems comprised of individual agents in a two-dimensional environment, with substrates governed by differential equations. The model I implemented is a self-improved microbiological one (a quorum sensing and swarming model of the Pseudomonas aeruginosa bacterium).
-
-This version is yet to be properly parameterized to produce biologically relevant simulations.
